@@ -1,14 +1,14 @@
 /* ### 版面設計 ###*/
 
 body{
-	margin: 24px 10px;
+	margin: 30px 10px;
 	font-family: Arial,'標楷體' ,sans-serif;
 }
 
 
 /* L-size bigger than 980px; M-size 640~979px; S-size smaller than 639px */
 
-#container{
+#container-fluid{
 	width: 960px;
 	margin: auto;
 }
@@ -18,8 +18,10 @@ header{
 	overflow: hidden;
 }
 
+/* overflow:hidden 將多的區塊隱藏，版面比較好看 */
 
-#headerpost{
+
+#topnew{
 	margin-bottom: 30px;
     overflow: hidden;
 }
@@ -28,6 +30,12 @@ header{
     margin-bottom: 30px;
     overflow: hidden;
 }
+
+footer {
+    margin-bottom: 30px;
+}
+
+
 
 
 /* ### 細節設計 ###*/
@@ -43,6 +51,9 @@ header{
     margin: 0;
 }
 
+
+
+
 /* vertical-align: bottom 對齊底部，比較好看 */
 
 
@@ -52,6 +63,7 @@ header{
     vertical-align: bottom;
     width: 332px;
 }
+
 
 
 /* HEADER NAV */
@@ -66,13 +78,15 @@ nav {
     float: right;
     font-size: 15px;
     font-family: 'Anton', sans-serif;
-    padding-top: 30px;
+    padding-top:30px;
 }
 
 nav ul {
     margin: 0;
     padding: 0;
 }
+
+
 
 
 /* list-style-type: none 可把原本有序列表的點點取消*/
@@ -82,7 +96,11 @@ nav li {
     float: left;
 }
 
-\/* 用CSS做選單!!!這邊先暫且依樣畫葫蘆，之後會教大家Bootstrap，就不用用CSS刻很久了*/
+
+
+
+
+/* 用CSS做選單!!!這邊先暫且依樣畫葫蘆，之後會教大家Bootstrap，就不用用CSS刻很久了*/
 
 
 /*  display: block 每個連結字體以區塊顯示*/
@@ -99,14 +117,253 @@ nav li {
 
 /*  color請參考CSS色碼對照表 https://www.toodoo.com/db/color.html */
 
-header nav ul li a{
-    display: block;
+ nav li a {
+     display: block;
     float: left;
     margin-left: 20px;
     margin-top: 20px;
     text-decoration: none;
     border-bottom: solid 3px transparent;
-    color: #FFBB66;
-    letter-spacing: 2px;
+    color: #000000;
 }
- 
+
+h2 { color: #CC0000;
+
+}
+
+ /*  nav li a:hover 當滑鼠在連結文字上徘徊的時候 */
+
+ nav li a:hover {
+    border-bottom-color: #ff1e97;
+}
+
+
+
+
+/*  HEADERPOST 圖片*/
+
+
+/* vertical-align: bottom 對齊底部，比較好看 */
+
+
+/* container設960，三分法原則，headerpost設620-660都蠻好看的 */
+
+#topnew img {
+    float: left;
+    vertical-align: bottom;
+    width: 650px;
+}
+
+ /* HEADERPOST LEAD*/
+
+#topnew #lead {
+    float: left;
+    width: 300px;
+    color: #ffffff;
+    margin-left: 25px;
+}
+
+#topnew h2 {
+    margin: 20px 0;
+}
+
+#topnew .more {
+    font-size: 18px;
+    font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
+    text-align: right;
+}
+
+
+/* 用CSS寫按鈕!!!這邊先暫且依樣畫葫蘆，之後會教大家Bootstrap，就不用用CSS刻很久了*/
+
+#topnew .more a {
+    color: #ffffff;
+    background-image: url(img/more.png);
+    background-size: 28px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    display: block;
+    padding: 10px 40px 10px 0;
+    text-decoration: none;
+}
+
+
+
+/* 用CSS做漸層!!!這邊先暫且依樣畫葫蘆，之後會教大家Bootstrap，就不用用CSS刻很久了*/
+
+#topnew {
+    background-color: #333333;
+    background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#888888));
+    background: -webkit-linear-gradient(#000000 0%, #888888 100%);
+    background: -moz-linear-gradient(#000000 0%, #888888 100%);
+    background: -o-linear-gradient(#000000 0%, #888888 100%);
+    background: -ms-linear-gradient(#000000 0%, #888888 100%);
+    background: linear-gradient(#000000 0%, #888888 100%);
+    overflow: hidden;
+}
+
+/* POST 圖文 */
+
+
+/* container設960，216x4+32x3=960 */
+
+.post {
+    float: left;
+    width: 216px;
+    margin-right: 32px;
+    margin-bottom: 25px;
+}
+/* .post:last-child 以後新增的post，只要是最後一個，右邊界皆為0 */
+.post:last-child {
+    margin-right: 0;
+}
+
+/* 每四個為一組的post，右邊界皆為0 */
+.post+.post+.post+.post {
+    margin-right: 0;
+}
+
+
+
+   
+/* ### POST 圖文 ###*/
+/* container設960，216x4+32x3=960 */
+
+.post img {
+    width: 216px;
+    height: auto;
+    vertical-align: bottom;
+    border: none;
+}
+
+.post h2 {
+    font-size: 16px;
+    margin: 5px 0 0;
+}
+
+.post p {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.post .data {
+    float: left;
+    margin: 0;
+}
+
+.post .more_s {
+    float: right;
+    color: #FFFF00;
+    font-size: 14px;
+    font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
+    background-color: #666666;
+    background-image: url(img/more.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: 94% 50%;
+    padding: 3px 25px 3px 5px;
+    margin: 0;
+}
+
+.post a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+}
+
+.post a:hover {
+    background-color: #FF7744
+}
+
+
+
+
+
+
+
+
+
+/* ### FOOTER ###*/
+
+footer {
+    background-color: #000000;
+    padding: 5px;
+}
+
+
+footer p {
+    float: left;
+    margin-top: 10px;
+    color: #ffffff
+}
+
+#iconmenu {
+    float: right;
+}
+
+#iconmenu ul {
+    margin: 0;
+    padding: 3px 0 0;
+}
+
+#iconmenu li {
+    display: inline;
+    list-style-type: none;
+}
+
+#iconmenu img {
+    border: none;
+    width: 28px;
+}
+
+#submenu {
+    clear: both;
+    font-family: 'Maven Pro', Helvetica, Arial, san-serif;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+#submenu ul {
+    margin: 3px;
+    padding: 0;
+}
+
+#submenu li {
+    list-style-type: none;
+    float: left;
+}
+
+#submenu li a {
+    display: block;
+    width: auto;
+    border-right: solid 1px #ffffff;
+    text-align: center;
+    text-decoration: none;
+    color: #ff1e97;
+    font-weight: bold;
+    padding-right: 6px;
+    margin-right: 3px;
+}
+
+#submenu li:last-child a {
+    border: none;
+}
+
+#submenu li+li+li a {
+    border: none;
+}
+
+small {
+    font-size: 12px;
+    font-weight: bold;
+    display: block;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+
+
+
+
+

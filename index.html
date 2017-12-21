@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="wiath=device-wiath,initial-scale=1">
+
 
 	<title>shen</title>
-	<meta charset="UTF-8">
+	<link href="css/bootstrap.css" rel="stylesheet">
+
 
 	<link rel="stylesheet" type="text/css" href="css.css">
 	<link rel="stylesheet" href="style-l.css">
@@ -15,54 +20,104 @@
 </head>
 
 <body>
+    <div class="jumbotron">
+        <div class="contenter-fluid">
+            <header class="col-md-12">
 
-<div id="container"></div>
-<header>
-	<div id="banner">
+	    <div id="banner">       
 		<h1>
-		      <img src="img/love.jpg" alt="Hello,I come from Taiwan">
+		<img src="img/love.jpg" alt="Hello,I come from Taiwan">
 		</h1>
+        </div>
 
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">shen</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">RELATED ME<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">JAPON</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">TRAVEL</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">PHOTO</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+        </div>
 	</div>
-	
-	<nav>
-		<ul>
-			<li><a href="#">LE L212 SALON</a></li>
-			<li><a href="#">LES PIEDS SUR TERRE</a></li>
-			<li><a href="#">IDÉE EN TÊTE</a></li>
-			<li><a href="#">SALUT</a></li>		
-		</ul>
-	</nav>
-</header>
-     <main>
-     	<div id=topnew></div>
-     	    <img src="img/2017/777.jpg" alt="首發圖片">
-     	<div id="lead"></div>
+
+            </header>
+     <main class="col-md-12">
+        <div id="topnew">
+     	<img src="img/2017/777.jpg" alt="首發圖片">
+     	<div id="lead">
         <h2>東京是個美麗的都市</h2>
         <p>這是我第一次出國的國家，不管是哪都很好玩！</p>
         <p class="data">2017/8/31</p>
-        <p class="more"><a href="">more</a></p>	
+        <p class="more"><a href="#">MORE</a></p>	
+        </div>
+    </div>
 
-        <img src="img/2017/000.jpg">
+
+    <div id="content" class="col-md-12">
+        <div class="post" class="col-md-3">
+        <a href="#">
+        <img src="img/2017/000.jpg" alt="東京的夜晚" class="rounded">
         <h2>東京的夜晚</h2>
         <p>美麗的都市，大樓的燈光閃爍，靜謐的夜晚多了熱鬧的燈光。</p>
         <p class="data">2017/8/31</p>
-        <p class="more"><a href="">more</a></p>	
+        <p class="more_s">MORE</p>
+        </a>
+        </div>	
 
-        <img src="img/2017/234.jpg">
+        <div class="post" class="col-md-3">
+        <a href="#">
+        <img src="img/2017/123.jpg" alt="三鷹美術館" class="rounded">
+        <h2>進入宮崎駿</h2>
+        <p>只能在電視電影才能看到的人物故事，展現在眼前，覺得又實現了夢想之一。</p>
+        <p class="data">2017/8/31</p>
+        <p class="more_s">MORE</p>
+        </a>	
+        </div>
+
+        <div class="post" class="col-md-3">
+        <a href="#">
+        <img src="img/2017/234.jpg" alt="台場 彩虹橋" class="rounded">
         <h2>陽光 沙灘 比基尼</h2>
         <p>溫暖的陽光灑落在沙灘上，寒冷的天氣中多了些許溫暖，遠眺海港的美景，台場的彩虹大橋、東京鐵塔與海鷗號，緩慢地度過一整天。</p>
         <p class="data">2017/9/1</p>
-        <p class="more"><a href="">more</a></p>	
+        <p class="more_s">MORE</p>	
+        </a>
+        </div>
 
-        <img src="img/2017/111.jpg">
+        <div class="post" class="col-md-3">
+        <a href="#">
+        <img src="img/2017/111.jpg" alt="皇居" class="rounded">
         <h2>東京市中的莊嚴</h2>
         <p>繁華的都市中，一座莊嚴又古典的城堡佇立著。天皇就住在那，與人民用一座高牆分隔著。</p>
         <p class="data">2017/9/2</p>
-        <p class="more"><a href="">more</a></p>	
+        <p class="more_s">MORE</p>
+
      	<div id=oldnews></div>
+        </a>
+        </div>
+    </div>
+        
+
 	</main>	
-	<footer>
+	<footer class="col-md-12">
 		<p>Shen stream</p>
 		<div id="iconmenu">
 			<ul>
@@ -72,7 +127,21 @@
 				<li><a href="#"><img src="img/icons/svg/004-facebook-logo-button.svg"></a></li>
 			</ul>
 		</div>
+		<div id="submenu">
+			<ul>
+                <li><a href="...">Privacy Policy</a></li>
+                <li><a href="...">Terms of Use</a></li>
+                <li><a href="...">Contact</a></li>
+            </ul>
+        </div>
+        <small>Copyright &copy; Shen steam, all rights reserved.</small>
 	</footer>
-
+        </div>
+    </div>
+    
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
