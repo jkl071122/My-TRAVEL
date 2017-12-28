@@ -61,8 +61,17 @@ footer {
 
 #banner img {
     vertical-align: bottom;
-    width: 332px;
+   width: 332px;
 }
+
+
+.jumbotron{
+    
+    background-color:#FFFFFF;
+    }
+
+
+
 
 
 
@@ -127,7 +136,8 @@ nav li {
     color: #000000;
 }
 
-h2 { color: #CC0000;
+h2 { 
+	color: #CC0000;
 
 }
 
@@ -287,7 +297,7 @@ h2 { color: #CC0000;
 /* ### FOOTER ###*/
 
 footer {
-    background-color: #000000;
+    background-color: #DDDDDD;
     padding: 5px;
 }
 
